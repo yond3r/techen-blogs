@@ -1,2 +1,2 @@
 # techen-blogs
-(like a of words on tekken)
+(like a play on words of tekken)
