@@ -11,7 +11,7 @@ const newPost = async (event) =>{
     if(!title || !content){
         alert ("Hey buddy, you should enter in a title and/or text for your post. that's pretty critical.")
     } else {
-        const response = await fetch ('/dashboard', {
+        const response = await fetch ("/dashboard", {
             method: "POST",
             body: JSON.stringify({title, content}),
             headers: {"content-type": "application/json"}

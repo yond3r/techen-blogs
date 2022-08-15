@@ -27,12 +27,12 @@ const response = await fetch("/api/login", {
 });
 
 if(response.ok){
-    document.location.replace('/dashboard');
+    document.location.replace("/dashboard");
 } else {
     alert(response.statusText);
     }
 
-const signupFormMoniker = async (event) => {
+const signupMoniker = async (event) => {
     event.preventDefault();
 
     const username = document.getElementById("usernameSignup").value.trim();
@@ -56,11 +56,11 @@ const response = await fetch("/api/login", {
 })
 
 if(response.ok){
-    document.location.replace('/dashboard');
+    document.location.replace("/dashboard");
 } else {
     alert(response.statusText);
 }}};
 
 
-loginForm = addEventListener("submit", loginFormMoniker);
-signupForm = addEventListener("submit", signupFormMoniker);
+loginForm.addEventListener("submit", loginFormMoniker);
+signupForm.addEventListener("submit", signupMoniker);
