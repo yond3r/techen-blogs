@@ -1,0 +1,23 @@
+<div>
+    <h1>{{postData.title}}</h1>
+    <p>By: {{postData.user.username}}</p>
+    <p>{{postData.content}}</p>
+    <p>{{postData.createdAt}}</p>
+</div>
+{{#each postData.comments}}
+{{>comments}}
+{{/each}}
+
+<form action="submit" id="commentForm">
+    <div>
+        <label for="commentText">Comment: </label>
+        <br>
+        <textarea name="commentText" id="commentText" cols="30" rows="5"></textarea>
+    </div>
+    <div>
+    <button type="submit">Submit</button>
+    </div>
+</form>
+
+<script src="../public/comment.js"></script>
+<script src="../public/logout.js"></script>

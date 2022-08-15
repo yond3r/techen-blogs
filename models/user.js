@@ -1,6 +1,6 @@
-const {Model, DataTypes} = require('sequelize');
-const sequelize = require('../config/connection');
-const bycrypt = require('bcryptjs');
+const {Model, DataTypes} = require("sequelize");
+const sequelize = require("../config/connection");
+const bycrypt = require("bcryptjs");
 
 class User extends Model {
     checkPassword(password) {
@@ -24,7 +24,7 @@ User.init({
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-            len:[8]
+            len:[10]
         }
     }
 },
@@ -37,11 +37,10 @@ User.init({
         }  
     },
         sequelize,
-        timestamps: true,
-        updatedAt: false,
+        timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'post'
+        modelName: "user"
     });
 
 module.exports = User;

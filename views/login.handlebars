@@ -1,4 +1,4 @@
-<body class="img js-fullheight" style="background-image:url(/public/css/images/wp8414787.jpeg)">
+<body>
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center">
@@ -9,13 +9,13 @@
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
-                        <h3 class="mb-4 text-center">Already have an account? Log in to join gear up and game on.</h3>
-                        <form action="#" class="signin-form">
+                        <h3 class="mb-4 text-center">Already have an account? Log in to gear up and game on.</h3>
+                        <form action="submit" id="loginForm" class="signin-form">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Username" required>
+                                <input type="text" class="form-control" id="usernameLogin" placeholder="Username" required>
                             </div>
                             <div class="form-group">
-                                <input id="password-field" type="password" class="form-control" placeholder="Password"
+                                <input id="passwordLogin" type="password" class="form-control" placeholder="Password"
                                     required>
                                 <span toggle="#password-field"
                                     class="fa fa-fw fa-eye field-icon toggle-password"></span>
@@ -30,8 +30,7 @@
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
-                                <div class="w-50 text-md-right">
-                                    <a href="#" style="color: #fff">Forgot Password</a>
+                                {{!-- <div class="w-50 text-md-right"> --}}
                                 </div>
                             </div>
                         </form>
@@ -43,7 +42,7 @@
                                 Twitter</a>
                         </div>
                         <p class="w-100 text-center">&mdash; Or Sign Up! &mdash;</p>
-                        <form action="submit" id="signup-form">
+                        {{!-- <form action="submit" id="signup-form">
                             <div>
                                 <label for="usernameSignup">Username: </label>
                                 <input type="text" id="usernameSignup" />
@@ -54,6 +53,29 @@
                             </div>
                             <div>
                                 <button type="submit">Signup</button>
+                            </div> --}}
+                            <form action="submit" class="signin-form">
+                            <div class="form-group">
+                                <input type="text" id="usernameSignup" class="form-control" placeholder="Username" required>
+                            </div>
+                            <div class="form-group">
+                                <input id="password-field" id="passwordSignup" type="password" class="form-control" placeholder="Password"
+                                    required>
+                                <span toggle="#password-field"
+                                    class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control btn btn-primary submit px-3">Sign up</button>
+                            </div>
+                            <div class="form-group d-md-flex">
+                                <div class="w-50">
+                                    <label class="checkbox-wrap checkbox-primary">Remember Me
+                                        <input type="checkbox" checked>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                {{!-- <div class="w-50 text-md-right"> --}}
+                                </div>
                             </div>
                         </form>
                     </div>
