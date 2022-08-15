@@ -7,11 +7,11 @@ const loginFormMoniker = async (event) => {
 
     const username = document.getElementById("usernameLogin").value.trim();
     const password = document.getElementById("passwordLogin").value.trim();
-}
+
 
 //input values
 if (!username || !password){
-    alert("Hey, just wanted to let you know that you're missing a username and password from the field. You should definitely add what you need.");
+    alert("Hey, just wanted to let you know that you're missing a username and password from the field. You should definitely add what you need.")
     return;
 }
 
@@ -24,7 +24,7 @@ const response = await fetch("/api/login", {
     method: "POST",
     body: JSON.stringify({username, password}),
     headers: {"content-type": "application/json"}
-})
+});
 
 if(response.ok){
     document.location.replace('/dashboard');
@@ -32,12 +32,11 @@ if(response.ok){
     alert(response.statusText);
     }
 
-const signupFormMoniker = async (event) =>{
+const signupFormMoniker = async (event) => {
     event.preventDefault();
 
     const username = document.getElementById("usernameSignup").value.trim();
     const password = document.getElementById("passwordSignup").value.trim();
-}
 
 //inputs
 if (!username || !password){
@@ -60,7 +59,8 @@ if(response.ok){
     document.location.replace('/dashboard');
 } else {
     alert(response.statusText);
-}
+}}};
 
-loginForm = addEventListener("submit", loginFormMoniker)
-signupForm = addEventListener("submit", signupFormMoniker)
+
+loginForm = addEventListener("submit", loginFormMoniker);
+signupForm = addEventListener("submit", signupFormMoniker);

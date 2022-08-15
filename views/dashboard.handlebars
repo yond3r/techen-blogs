@@ -1,0 +1,19 @@
+{{#each userPosts as |userPost||}}
+{{>dashboardMini}}
+{{/each}}
+
+<h2>New Post</h2>
+<form id="newPost">
+<div>
+    <label for="postTitle">Title!</label>
+        <input type="text"  id="postTitle">
+</div>
+<div>
+    <label for="postText">Text!</label>
+        <textarea name="postText" id="postText" cols="33" rows="5"></textarea>
+</div>
+</div>
+    <button type="submit">&#10024;</button>
+</form>
+{{!-- really hoping that turns out as some sort of sparkly "like/submit button lol" --}}
+<script src="../public/post.js"

@@ -1,0 +1,21 @@
+<div class="miniCard" id="post" dataPostId="{{postData.id}}">
+    <h2>Update!</h2>
+    <form action="submit" id="updateForm">
+        <div>
+            <label for="titleText">Title:</label>
+            <textarea id="titleText">{{postData.title}}</textarea>
+        </div>
+        </div>
+            <div>
+                <label for="contentText">Content:</label>
+                <textarea name="contentText" id="contentText" cols="25" rows="5">{{postData.content}}</textarea>
+            </div>
+        <button type="submit">&#10024;</button>
+    </form>
+</div>
+    <div>
+        <button id="delete">&#10060;</button>
+    </div>
+
+<script src="../public/editPost.js"></script>
+<script src="../public/logout.js"></script>
