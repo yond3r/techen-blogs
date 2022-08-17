@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 
         const userPosts = dashboardData.map(post => post.get({ plain: true }));
 
-        res.render('dashboard', {
+        res.render('/dashboard', {
             userPosts,
             logged_in: req.session.logged_in
         })

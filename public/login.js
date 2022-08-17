@@ -31,6 +31,7 @@ if(response.ok){
 } else {
     alert(response.statusText);
     }
+}
 
 const signupMoniker = async (event) => {
     event.preventDefault();
@@ -59,7 +60,7 @@ if(response.ok){
     document.location.replace("/dashboard");
 } else {
     alert(response.statusText);
-}}};
+}};
 
 
 loginForm.addEventListener("submit", loginFormMoniker);

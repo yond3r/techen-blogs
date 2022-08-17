@@ -1,5 +1,3 @@
-const { json } = require("body-parser");
-
 const newCommentPosting = async (event) => {
     event.preventDefault();
 }

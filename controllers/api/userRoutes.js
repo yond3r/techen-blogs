@@ -9,6 +9,7 @@ router.post('/create', async (req, res) =>{
             req.session.user_id = userData.id;
             req.session.logged_in = true;
             res.status(200).json(userData)
+                return res.redirect("/dashboard");
 });
 
 } catch (err) {
@@ -32,6 +33,7 @@ router.post('login', async (req, res) =>{
             req.session.user_id = userData.id,
             req.session.logged_in = true;
             res.status(200).json({message: "Logged in (-:"})
+                return res.redirect("/dashboard");
         });
     } catch(err) {
         res.status(400).json(err);
