@@ -2,7 +2,7 @@ const { User, Post, Comment } = require('../models');
 
 const router = require('express').Router();
 
-router.get('/homepage', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const homepageData = await Post.findAll(
             {

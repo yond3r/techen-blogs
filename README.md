@@ -19,14 +19,14 @@
  [heroku link]
  
  ## description 
- - This site allows for developers to explore their thoughts and ideas with games! Whether you're a game developer (or a "regular" one), or a lover of the games and arts -- this is the website for you. This website features upcoming games and game-adjacent events, like PAX West, Austin Anime, and Twitch Con. 
+ This site allows for developers to explore their thoughts and ideas with games! Whether you're a game developer (or a "regular" one), or a lover of the games and arts -- this is the website for you. This website features upcoming games and game-adjacent events, like PAX West, Austin Anime, and Twitch Con. 
 
  Start posting with your friends about ideas, games you like, or anything in-between. (-:
 
  ## user story
-AS A developer who writes about tech
-I WANT a CMS-style blog site
-SO THAT I can publish articles, blog posts, and my thoughts and opinions
+* AS A developer who writes about tech
+* I WANT a CMS-style blog site
+* SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 ## installation
 
