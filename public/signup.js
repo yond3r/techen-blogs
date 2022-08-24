@@ -17,7 +17,7 @@ if(password.length < 10){
     return;
 }
 
-const response = await fetch("/api/login", {
+const response = await fetch("/api/signup", {
     method: "POST",
     body: JSON.stringify({username, password}),
     headers: {"content-type": "application/json"}
